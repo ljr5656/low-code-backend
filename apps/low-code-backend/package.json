@@ -1,6 +1,7 @@
 {
   "name": "low-code-backend",
   "version": "0.0.1",
+  "description": "low-code-backend",
   "scripts": {
     "dev": "cd .. && npm run start:lowcode"
   }

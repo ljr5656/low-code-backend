@@ -7,6 +7,9 @@
     "webpack": true,
     "tsConfigPath": "apps/low-code-backend/tsconfig.app.json"
   },
+  "generateOptions": {
+    "spec": false
+  },
   "monorepo": true,
   "root": "apps/low-code-backend",
   "projects": {
@@ -26,6 +29,15 @@
       "sourceRoot": "apps/devops/src",
       "compilerOptions": {
         "tsConfigPath": "apps/devops/tsconfig.app.json"
+      }
+    },
+    "user": {
+      "type": "application",
+      "root": "apps/user",
+      "entryFile": "main",
+      "sourceRoot": "apps/user/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user/tsconfig.app.json"
       }
     }
   }
