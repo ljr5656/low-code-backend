@@ -4,7 +4,7 @@ import {
   FastifyAdapter,
   NestFastifyApplication,
 } from '@nestjs/platform-fastify';
-import { AppModule } from './app.module';
+import { UserServerModule } from './user-server.module';
 import { AllExceptionsFilter } from 'lib/common/src/exceptions/base.exception.filter';
 import { HttpExceptionFilter } from 'lib/common/src/exceptions/http.exception.filter';
 import { TransformInterceptor } from 'lib/common/src/interceptors/transform.interceptor';
@@ -14,7 +14,7 @@ declare const module: any;
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(
-    AppModule,
+    UserServerModule,
     new FastifyAdapter(),
   );
 
@@ -39,6 +39,6 @@ async function bootstrap() {
     module.hot.dispose(() => app.close());
   }
 
-  await app.listen(3000);
+  await app.listen(3002);
 }
 bootstrap();

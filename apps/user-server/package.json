@@ -1,0 +1,8 @@
+{
+  "name": "user-server",
+  "version": "0.0.1",
+  "description": "user-server",
+  "scripts": {
+    "dev": "cd .. && npm run start:user"
+  }
+}
