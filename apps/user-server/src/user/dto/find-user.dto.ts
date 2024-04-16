@@ -1,8 +1,10 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty } from 'class-validator';
 
-export class CreateUserDto {
+export class FindOneUserDto {
   @IsNotEmpty()
-  @ApiProperty({ example: 'ljr' })
-  name: string;
+  @ApiProperty({ example: 1 })
+  id: number;
 }
+
+export class FindAllUserDto {}

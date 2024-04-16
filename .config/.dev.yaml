@@ -7,7 +7,7 @@ MONGODB_CONFIG:
   database: 'low_code' # 数据库名
   entities: 'mongo' # 自定义加载类型
   logging: false # 数据库打印日志
-  synchronize: true # 是否开启同步数据表功能
+  synchronize: true # 是否开启同步数据表功能 生产环境下设为false
 MYSQL_CONFIG:
   name: 'low_code'
   type: 'mysql'
@@ -18,4 +18,4 @@ MYSQL_CONFIG:
   database: 'low_code'
   entities: 'mysql'
   logging: true
-  synchronize: true
+  synchronize: true #生产环境下设为false

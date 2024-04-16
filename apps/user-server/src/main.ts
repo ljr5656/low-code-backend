@@ -24,11 +24,11 @@ async function bootstrap() {
   // 异常过滤器
   app.useGlobalFilters(new AllExceptionsFilter(), new HttpExceptionFilter());
 
-  // 接口版本化管理
-  app.enableVersioning({
-    defaultVersion: [VERSION_NEUTRAL, '1', '2'],
-    type: VersioningType.URI,
-  });
+  // // 接口版本化管理
+  // app.enableVersioning({
+  //   defaultVersion: [VERSION_NEUTRAL, '1', '2'],
+  //   type: VersioningType.URI,
+  // });
 
   // 创建文档
   generateDocument(app);
